@@ -78,6 +78,7 @@ label{
     background-color: black;
     height: 250px;
     width: 500px;
+    border-radius: 10px;
 }
 .icone-cartao{
     margin: 10px;
@@ -124,6 +125,7 @@ label{
     position: absolute;
     top: 340px;
     right: 400px;
+    border-radius: 10px;
 }
 #linha{
     margin-top: 30px;
