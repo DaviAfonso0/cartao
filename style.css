@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+:root{
+    --cor1: black;
+    --cor2:white;
+    --font1: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor1);
+    background-image: url(imagens/fundo-3.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: var(--font1);
+}
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.cartao{
+    background-color: white;
+    width: 50vw;
+    height: 607px;
+    position: absolute;
+    right: 0;
+}
+.titulo-form{
+    font-size: 2.4em;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+form{
+    padding: 10px;
+    position: absolute;
+    bottom:70px;
+    right: 40px;
+}
+input{
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+    width: 300px;
+}
+label{
+    font-size: 20px;
+}
+.label-data{
+    display: block
+}
+#idata{
+    display: inline-block;
+}
+#idata,#icvv{
+    width: 100px;
+}
+#submit{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    padding: 8px;
+    cursor: pointer;
+}
+.frente-cartao{
+    position: absolute;
+    top: 40px;
+    right: 600px;
+    background-color: black;
+    height: 250px;
+    width: 500px;
+}
+.icone-cartao{
+    margin: 10px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.icone-cartao-p{
+    display: inline-block;
+    margin: 10px;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.titulo-cartao{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 10px;
+    color: white;
+    font-size: 20px;
+}
+.chip-cartao{
+    margin: 10px;
+    display: block;
+}
+.paragrafo-cartao{
+    color: white;
+    font-size: 1.7em;
+    margin: 20px;
+}
+.nome-cartao{
+    color: white;
+    font-size: 1.8em;
+    margin: 20px;
+}
+.costas-cartao{
+    background-color: black;
+    height: 250px;
+    width: 500px;
+    position: absolute;
+    top: 340px;
+    right: 400px;
+}
+#linha{
+    margin-top: 30px;
+    background-color: rgb(49, 49, 49);
+    width: 100%;
+    height: 40px;
+}
+.cvv{
+    margin: 30px auto;
+    background-color: rgb(211, 211, 211);
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+}
+.paragrafo-cvv{
+    text-align: right;
+}

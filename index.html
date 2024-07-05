@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cartão</title>
+</head>
+<body>
+    <main>
+        <section class="cartao">
+            <div class="frente-cartao">
+                <div class="icone-cartao"></div>
+                <div class="icone-cartao-p"></div>
+               <h1 class="titulo-cartao">Nome do banco</h1>
+               <div class="chip-cartao"> 
+                   <img src="imagens/image.png" alt="chip cartão">
+                    <img src="imagens/aproxi.png" alt="aproximação cartão">
+               </div>
+               <p class="paragrafo-cartao">0000 0000 0000 0000</p>
+               <h1 class="nome-cartao">Nome no cartão</h1>
+            </div>
+
+            <div class="costas-cartao">
+                <div id="linha"></div>
+                <div class="cvv">
+                    <p class="paragrafo-cvv">000</p>
+                </div>
+            </div>
+            <h1 class="titulo-form">Cadatre seu Cartão</h1>
+            <form action="cartao.js" method="post" autocomplete="on">
+                <div>
+                    <label for="inome">Nome no Cartão </label>
+                    <input type="text" name="nome" id="inome" min="4" max="30" required placeholder="">
+                </div>
+                <div>
+                    <label for="inumero">Número do Cartão </label>
+                    <input type="number" name="numero" id="inumero" minlength="16" maxlength="16" placeholder="0000 0000 0000 0000" required>
+                </div>
+                <div>
+                    <label for="idata" class="label-data">Data de Expiração</label>
+                    <input type="number" name="data" id="idata" placeholder="ano" required>
+                    <input type="number" name="data" id="idata" placeholder="mes" required>
+                </div>
+                <div>
+                    <label for="icvv">CVV</label>
+                    <input type="number" name="cvv" id="icvv">
+                </div>
+                <div>
+                    <label for="isenha">Senha do cartão</label>
+                    <input type="password" name="senha" id="isenha" minlength="4" maxlength="10" required placeholder="•••••••">
+                </div>
+                <div>
+                    <input type="submit" value="Verification" id="submit">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
